@@ -1,6 +1,7 @@
 import clsx from "clsx";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
+import HomepageImage from "@site/static/img/main_photo_2.png";
 
 import Heading from "@theme/Heading";
 import styles from "./index.module.css";
@@ -10,6 +11,7 @@ function HomepageHeader() {
   return (
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className="container">
+        <img src={HomepageImage} />
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
