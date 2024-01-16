@@ -72,45 +72,43 @@ const config = {
           src: "img/navbar_photo.png",
         },
         items: [
+          {
+            type: "doc",
+            position: "left",
+            docId: "portfolio/portfolio",
+            label: "Portfolio",
+          },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            href: "https://github.com/brycemcwhirter",
-            label: "GitHub",
+            type: "doc",
             position: "right",
+            docId: "contact/contact",
+            label: "Contact",
           },
         ],
       },
-      footer: {
-        style: "dark",
-        links: [
-          {
-            title: "Socials",
-            items: [
-              {
-                label: "Instagram",
-                href: "https://www.instagram.com/brycemcwhirter/",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/brycemcwhirter",
-              },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
-              },
-            ],
-          },
-        ],
-      },
+      // footer: {
+      //   style: "dark",
+      //   links: [
+      //     {
+      //       title: "External Links",
+      //       items: [
+      //         {
+      //           label: "GitHub",
+      //           href: "https://github.com/brycemcwhirter",
+      //         },
+      //         {
+      //           label: "Instagram",
+      //           href: "https://www.instagram.com/brycemcwhirter/",
+      //         },
+      //         {
+      //           label: "Twitter",
+      //           href: "https://twitter.com/brycemcwhirter",
+      //         },
+      //       ],
+      //     },
+      //   ],
+      // },
       prism: {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
