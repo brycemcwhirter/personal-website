@@ -53,9 +53,6 @@ const config = {
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
-        theme: {
-          customCss: "./src/css/custom.css",
-        },
       }),
     ],
   ],
@@ -80,10 +77,9 @@ const config = {
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
-            type: "doc",
+            to: "/contact",
+            label: "Contact Me",
             position: "right",
-            docId: "contact/contact",
-            label: "Contact",
           },
         ],
       },

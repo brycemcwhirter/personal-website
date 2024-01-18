@@ -1,26 +1,7 @@
-import clsx from "clsx";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageImage from "@site/static/img/main_photo_2.png";
-
-import Heading from "@theme/Heading";
-import styles from "./index.module.css";
-
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
-  return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
-      <div className="container">
-        <img src={HomepageImage} />
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}></div>
-      </div>
-    </header>
-  );
-}
+import HomepageHeader from "../components/HomePage/HomepageHeader";
+import { Box, Container } from "@mui/material";
 
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
@@ -30,7 +11,6 @@ export default function Home() {
       description="Description will go into a meta tag in <head />"
     >
       <HomepageHeader />
-      <main></main>
     </Layout>
   );
 }
