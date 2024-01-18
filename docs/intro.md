@@ -1,4 +1,4 @@
----
----
+# What to Include in Portfolio Page
 
-# Intro Page
+- Which Languages I have Experience in
+- 3 strong projects I'm proud of

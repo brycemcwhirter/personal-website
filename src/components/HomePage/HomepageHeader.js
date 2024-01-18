@@ -1,12 +1,21 @@
 import React from "react";
-import HomepageImage from "@site/static/img/navbar_photo.png";
-import { Box, Grid } from "@mui/material";
+import { Box, Button, Grid, Container } from "@mui/material";
+
+import HeaderImage from "@site/static/img/navbar_photo.png";
 
 function LeftHeader() {
   return (
     <>
-      <Grid item lg>
-        <h1>Image Here</h1>
+      <Grid
+        container
+        item
+        xs={12}
+        lg={6}
+        direction="column"
+        justifyContent="center"
+        alignItems="center"
+      >
+        <img src={HeaderImage} />
       </Grid>
     </>
   );
@@ -15,9 +24,19 @@ function LeftHeader() {
 function RightHeader() {
   return (
     <>
-      <Grid item lg>
+      <Grid
+        container
+        item
+        xs={12}
+        lg={6}
+        direction="column"
+        justifyContent="center"
+      >
         <h1>Bryce McWhirter</h1>
-        <h2>Glad You're Here</h2>
+        <h3>Glad You're Here</h3>
+        <Button href="/contact" variant="outlined">
+          Contact Me
+        </Button>
       </Grid>
     </>
   );
@@ -27,10 +46,12 @@ export default function HomepageHeader() {
   return (
     <>
       <Box>
-        <Grid container spacing={3}>
-          <LeftHeader />
-          <RightHeader />
-        </Grid>
+        <Container>
+          <Grid container spacing={6}>
+            <LeftHeader />
+            <RightHeader />
+          </Grid>
+        </Container>
       </Box>
     </>
   );
